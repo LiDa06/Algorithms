@@ -19,12 +19,6 @@ public:
         return a;
     }
 
-    vector<int> sortedArray(int n) {
-        auto a = randomArray(n);
-        sort(a.begin(), a.end());
-        return a;
-    }
-
     vector<int> reversedArray(int n) {
         auto a = randomArray(n);
         sort(a.begin(), a.end());
@@ -33,7 +27,8 @@ public:
     }
 
     vector<int> almostSortedArray(int n, int k = 100) {
-        auto a = sortedArray(n);
+        auto a = randomArray(n);
+        sort(a.begin(), a.end());
         while (k > 0){
             swap(a[rnd() % n], a[rnd() % n]);
             --k;
