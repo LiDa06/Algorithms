@@ -29,8 +29,8 @@ struct Stats {
 
 int main() {
     constexpr size_t N = 1'000'000;
-    constexpr uint32_t P = 14;   // m = 16384
-    constexpr int R = 10;        // можно 10, хватает
+    constexpr uint32_t P = 14;
+    constexpr int R = 10;
     constexpr int STEPS = 20;
 
     size_t step_size = N / STEPS;
